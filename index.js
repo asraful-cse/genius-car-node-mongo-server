@@ -33,7 +33,7 @@ async function run() {
 			console.log("this is service result", result);
 			res.json(result);
 		});
-		// Get api---------------------------------------------
+		// Get api-------------------------------------------------------------------------
 		app.get("/services", async (req, res) => {
 			const cursor = servicesCollection.find({});
 			const services = await cursor.toArray();
