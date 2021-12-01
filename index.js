@@ -39,7 +39,7 @@ async function run() {
 			const services = await cursor.toArray();
 			res.send(services);
 		});
-		// Get a single api-------------------------------------
+		// Get a single api------------------------------------------
 		app.get("/services/:id", async (req, res) => {
 			const id = req.params.id;
 			console.log("getting specific service", id);
